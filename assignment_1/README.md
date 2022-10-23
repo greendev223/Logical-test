@@ -6,9 +6,7 @@ Write Javascript or Typescript code to answer the following questions. Note that
 
 ## Demo
 
-```http
-  https://www.programiz.com/javascript/online-compiler
-```
+https://data-manipulation-logical.netlify.app/
 
 
 
