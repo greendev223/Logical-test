@@ -20,9 +20,9 @@ The purpose of this assignment is to help evaluate your React and front-end deve
 
 ## Living link
 
-```http
+
   https://analyze-image-logical.netlify.app/
-```
+
     
 ## Authors
 
