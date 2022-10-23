@@ -10,9 +10,7 @@ Write Javascript or Typescript code to answer the following questions. Note that
 
 ## Online test
 
-```http
-  https://www.programiz.com/javascript/online-compiler
-```
+https://www.programiz.com/javascript/online-compiler
 
 
 
