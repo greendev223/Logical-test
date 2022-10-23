@@ -8,6 +8,8 @@ import 'react-toastify/dist/ReactToastify.css'
 import AnalyzedTableContent from '@src/components/AnalyzedTableContent'
 import { ANALYZE_API, DEFAULT_IMG_URL } from '../constants/analyzeValues'
 
+import * as _ from 'lodash'
+
 /**
  * Home page to analyze image...  2022-10-23 by Jovan
  * @returns
@@ -72,7 +74,7 @@ const Home: NextPage = () => {
 
   //get all images stored in local storage
   const getHistoryImages = (): string[] => {
-    if (history) return Object.keys(history)
+    if (history) return _.map(history, (v, k) => k)
     else return []
   }
 
@@ -93,6 +95,8 @@ const Home: NextPage = () => {
     } else returnData = analyzedData
     return returnData || []
   }
+
+
 
   return (
     <div className='bg-gray-100 min-h-screen'>

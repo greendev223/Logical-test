@@ -1,20 +1,14 @@
 // problem 2
 
-const objList = [{ foo: 1 }, { bar: 2 }, { foo: -2 }, { foo: 3, bar: 4 }];
+// initial input values
+const objList = [{foo: 1}, {bar: 2}, {foo: -2}, {foo: 3, bar: 4}]
 
-function handleParse(objList) {
-  let returnValue = {};
+let store={}
+  _.map(objList , function(value) {
+  		_.isObject(value)&&_.map(value, function(v,key){
+  		_.isNumber(v) && (store[key] = _.has(store,key)?(store[key] + v) : v)
+  		})
+})
 
-  objList.map((obj) => {
-    if (typeof obj != "object") return;
-    Object.keys(obj).map((key) => {
-      let value = obj[key];
-      if (value == undefined || typeof value != "number") return;
-      if (!returnValue[key]) returnValue[key] = value;
-      else returnValue[key] += value;
-    });
-  });
-  return returnValue;
-}
-
-console.log(handleParse(objList));
+//result 
+result = store

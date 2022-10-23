@@ -16,16 +16,17 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@types/react-toastify": "^4.1.0",
     "clsx": "^1.2.1",
     "next": "^12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-toastify": "^9.0.8",
     "win-node-env": "^0.6.1"
   },
   "devDependencies": {
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.1.2",
+    "@types/lodash": "^4.14.186",
     "@types/node": "^18.11.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
