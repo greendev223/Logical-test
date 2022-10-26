@@ -10,7 +10,7 @@ https://data-manipulation-logical.netlify.app/
 
 
 
-## Online Lodash Compiler
+## Online Lodash Tester
 
 https://codepen.io/travist/full/jrBjBz/
 
